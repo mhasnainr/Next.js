@@ -350,15 +350,186 @@
 //   i++;
 // }
 
+// --------------------------------------------------------------------------------------------------------
+
+// ------- map()
+
+// Qs: You run an e-commerce store, and you want to increase the prices of all products by 20%
+// same Qs, diff ways
+
+// using for loop:
+
+// let prices = [10, 20, 30];
+// let newPrice = [];
+
+// for (let i = 0; i < prices.length; i++) {
+//   newPrice.push(prices[i] * 1.2);
+// }
+// console.log(newPrice);
+// [120, 240, 360]
+
 //
 
-// Task 6:
+// using map()
 
-// let ask = prompt(" enter a number");
+// let prices = [10, 20, 30];
+// let newPrice = prices.map((prices) => prices * 1.2);
+// console.log(newPrice);
+// [120, 240, 360]
 
-// let i = 1;
-// while (condition) {
-//   if (ask === 5) {
-//     console.log("Correct number");
-//   } else ask++;
-// }
+//
+
+// Practise Qs [ map() ]:
+
+// P1: double the value
+
+// let num = [3, 5, 4, 7];
+// let doubled = num.map((num) => num * 2);
+// console.log(doubled);
+
+//
+
+// P2: convert to uppercase
+
+// let names = ["ali", "asiF", "baqir"];
+// let newForm = names.map((names) => names.toUpperCase());
+// console.log(newForm);
+
+//
+
+// P3: Extract specific property
+
+// let users = [
+//   {
+//     name: "Ali",
+//     age: 23,
+//   },
+//   {
+//     name: "Ashir",
+//     age: 43,
+//   },
+//   {
+//     name: "Abid",
+//     age: 13,
+//   },
+// ];
+
+// let userNames = users.map((users) => users.name);
+// console.log(userNames);
+
+//
+
+// ------------- Task Qs [ map() ]
+
+// Level: Easy
+
+// Qs below:
+
+// let people = [
+//   { name: "Ayesha", age: 30 },
+//   { name: "Hamza", age: 40 },
+//   { name: "Sara", age: 25 },
+// ];
+
+// T1: Square each number in the array.
+
+// let square = people.map((people) => people.age * people.age);
+// console.log(square);
+
+//
+
+// T2: Convert an array of lowercase city names into uppercase.
+
+// let changeCase = people.map((people) => people.name.toUpperCase());
+// console.log(changeCase);
+
+//
+
+// T3: Extract the "age" of each person
+
+// let extract = people.map((people) => people.age);
+// console.log(extract);
+
+//
+
+// Level: Medium
+
+// Qs below:
+
+//   T1: Add a 10% tax to each price
+
+// let prices = [100, 200, 300, 400];
+// let taxedPrice = prices.map((prices) => prices * 0.9);
+// console.log(taxedPrice);
+
+//
+
+//
+
+//   T2: Transform the following list of products to only return the product names
+
+// let products = [
+//   { productName: "Laptop", price: 1000 },
+//   { productName: "Phone", price: 500 },
+//   { productName: "Tablet", price: 300 },
+// ];
+
+// let names = products.map((products) => products.productName);
+// console.log(names);
+
+//
+
+//   T3:  Write a function that returns the lengths of each name in an array:
+
+// let names = ["Hasnain", "Ali", "Umair"];
+// let lengths = names.map((names) => names.length);
+// console.log(lengths);
+
+//
+
+// Level: Hard
+
+// T1: Extract the domain names from the following email addresses:
+
+// let emails = ["user1@gmail.com", "user2@yahoo.com", "user3@hotmail.com"];
+
+// let domains = emails.map((emails) => emails.split("@")[1]);
+// console.log(domains);
+
+//
+
+// T2: You have an array of objects representing student scores. Return a new array where only the names of students with scores above 50 are listed.
+
+// let students = [
+//   { name: "Hasnain", score: 80 },
+//   { name: "Ali", score: 40 },
+//   { name: "Umair", score: 55 },
+// ];
+
+// newList = students
+//   .filter((students) => students.score > 50)
+//   .map((students) => students.name);
+// console.log(newList);
+
+//
+
+// T3: Transform an array of book objects to show only the book titles and authors
+
+// let books = [
+//   { title: "Book1", author: "Author1", year: 2020 },
+//   { title: "Book2", author: "Author2", year: 2021 },
+//   { title: "Book3", author: "Author3", year: 2022 },
+// ];
+
+// let newArray = books.map((books) => ({
+//   title: books.title,
+//   author: books.author,
+// }));
+
+// console.log(newArray);
+
+//
+
+// ------- forEach():
+
+//
