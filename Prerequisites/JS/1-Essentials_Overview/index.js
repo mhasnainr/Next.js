@@ -532,4 +532,67 @@
 
 // ------- forEach():
 
+// ---- Practise Qs
+
+// Logging Each Element
+
+// let num = [1, 2, 4, 6, 3];
+// num.forEach((num) => console.log(num));
+// console.log(num); // wrong step
+
 //
+
+// Calculate Total Sum
+
+// let prices = [132, 432, 542];
+// let total = 0;
+
+// prices.forEach((prices) => {
+//   total += prices;
+// });
+// console.log(total);
+
+//
+
+// Update Values in Place
+
+// let products = [
+//   {
+//     name: "Laptop",
+//     price: 232,
+//   },
+//   {
+//     name: "Phone",
+//     price: 1232,
+//   },
+// ];
+// products.forEach((products) => {
+//   products.price += 100;
+// }),
+//   console.log(products);
+
+//
+
+// ---- Tasks
+
+// Level: Easy
+
+// Qs: Log each name from an array of names:
+
+// let names = ["Hasnain", "Ali", "Umair"];
+// names.forEach((name) => console.log(name));
+
+//
+
+// Qs: Add 5 to each number in an array
+
+// let numbers = [10, 20, 30, 40];
+// numbers.forEach((number, index) => (numbers[index] = number + 5));
+// console.log(numbers);
+
+//
+
+// Qs: Print the index of each element in an array
+
+// let colors = ["red", "green", "blue"];
+// colors.forEach((colors, index) => console.log(index));
