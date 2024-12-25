@@ -596,3 +596,36 @@
 
 // let colors = ["red", "green", "blue"];
 // colors.forEach((colors, index) => console.log(index));
+
+//
+
+// Level: Medium
+
+// Qs: Calculate the total score from an array of scores ----- Error in Ans
+
+// let scores = [80, 90, 70, 85];
+// scores.forEach((scores, index) => (scores[index] = scores + scores));
+// console.log(scores);
+
+//
+
+// Qs: Update the stock status for each product
+
+// let products = [
+//   { name: "Laptop", inStock: false },
+//   { name: "Phone", inStock: true },
+// ];
+// Update all to `inStock: true`
+
+//
+
+//
+
+// Qs: Extract and log the initials of each name in the array
+
+// let fullNames = ["John Doe", "Jane Smith", "Emily Davis"];
+// Expected: J.D, J.S, E.D
+
+//
+
+//
